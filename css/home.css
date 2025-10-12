@@ -1,0 +1,65 @@
+@import url('./global.css');
+
+.home {
+    background-color: #2F3334;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 20px;
+    height: 44px;
+    background-color: #181A1C;
+    gap: 12px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.header-logo {
+    width: 20px;
+    height: 18px;
+}
+
+.header-navbar {
+}
+
+.header-navbar ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;      
+    gap: 12px;
+}
+
+
+.header-navbar ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-nav-item {
+    color: #fff;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+}
+
+.account{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.account img {
+    width: 20px;
+    height: 20px;
+}
