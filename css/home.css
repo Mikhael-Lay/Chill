@@ -35,12 +35,12 @@
     gap: 12px;
 }
 
-
 .header-navbar ul li {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .header-nav-item {
     color: #fff;
     text-decoration: none;
@@ -63,3 +63,129 @@
     width: 20px;
     height: 20px;
 }
+
+.hero-section {
+    width: 100%;
+    height: 225px;
+    position: relative;
+}
+
+.hero-section::after {
+    content: "";
+    position: absolute;
+    inset: 0; /* shorthand for top: 0; right: 0; bottom: 0; left: 0; */
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #181A1C 100%);
+}
+
+.hero-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+
+}
+
+.headline-content {
+    width: 340px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    z-index: 2;
+    align-items: flex-start;
+    text-align: left;
+    gap: 12px;
+    
+}
+
+.headline-content h4 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 0px;
+    
+    
+} 
+
+.headline-content p { 
+    height: 32px;
+    font-size: 12px;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    text-overflow:ellipsis;
+    overflow:hidden;
+    display:-webkit-box;
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:2;
+}
+
+.action-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 8px
+}
+
+.left-button-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.info-button {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* space between icon and text */
+}
+
+.info-icon {
+    width: 12px;
+    height: 12px;
+}
+
+.button{
+    border-radius:48px;
+    padding: 4px 12px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    border: none;
+    cursor: pointer;
+}
+
+.primary{
+    background-color: #0F1E93;
+}
+.secondary{
+    background-color: #22282A;
+}
+
+.disabled {
+    color: #C1C2C4;
+    cursor: not-allowed;
+    border: 1px solid #C1C2C4;
+    background-color: transparent;
+
+}
+
+.rounded {
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 6px;
+    width: 28px;
+    height: 28px;
+}
+.sound-button img {
+    width: 14px;
+    height: 14px;
+}
+ 
