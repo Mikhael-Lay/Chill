@@ -6,10 +6,16 @@
     <title>Chill - Home</title>
     <link rel="stylesheet" href="./css/home.css">
 </head>
+
 <body class="home">
+
+    <!-- ======  HEADER ====== -->
     <header class="header">
         <div class="header-left">
-            <img class="header-logo" src="./images/logo-1.png" alt="logo" />
+            <div class="header-logo-container">
+                <img class="header-logo" src="./images/vector-open.svg" alt="vector-open" />
+                <h5 class="header-title">CHILL</h5>
+            </div>
             <nav class="header-navbar">
                 <ul>
                     <li><a class="header-nav-item" href="#">Series</a></li>
@@ -18,56 +24,385 @@
                 </ul>
             </nav>
         </div>
-        <div class="account">
-            <img src="./images/account-image.png" alt="account-image" />
-            <img src="./images/arrow-down.png" alt="arrow-down" />
+        <div class="account" id="accountDropdown">
+            <img class="prof-pic" src="./images/prof-pic.png" alt="prof-pic" />
+            <img class="arrow-down" src="./images/vector-arrow-down.svg" alt="arrow-down" />
+            
+            <!-- Profile dropdown -->
+            <div class="dropdown-menu">
+                <div class="dropdown-item">
+                    <img src="./images/vector-profile.svg" alt="vector-profile" />
+                    <span style="color: blue;">Profil Saya</span>
+                </div>
+                <div class="dropdown-item">
+                    <img src="./images/vector-premium.svg" alt="vector-premium" />
+                    <span>Ubah Premium</span>
+                </div>
+                <div class="dropdown-item">
+                    <img src="./images/vector-logout.svg" alt="vector-logout" />
+                    <span>Keluar</span>
+                </div>
+            </div>
         </div>
     </header>
+
     <main>
+
+        <!-- ======  HERO ====== -->
         <section class="hero-section">
             <img src="./images/headline-content.png" alt="headline-content"/>
             <div class="headline-content">
                 <h4>Duty After School</h4>
-                <p> Sebuah benda tak dikenal mengambil alih dunia. Dalam keputusasaan, Departemen Pertahanan mulai merekrut lebih banyak tentara, termasuk siswa sekolah menengah. Mereka pun segera menjadi pejuang garis depan dalam perang.
-                </p>
-            <div class="action-container">
-                <div class="left-button-container">
-                    <button class="button primary">Mulai</button>
-                    <button class="button secondary info-button">
-                        <img src="./images/info-icon.png" alt="info-icon" class="info-icon"> Selengkapnya
-                    </button>
-                    <span class="button disabled">18+</span>
-                </div>
+                <p>Sebuah benda tak dikenal mengambil alih dunia. Dalam keputusasaan, Departemen Pertahanan mulai merekrut lebih banyak tentara, termasuk siswa sekolah menengah. Mereka pun segera menjadi pejuang garis depan dalam perang.</p>
+                <div class="action-container">
+                    <div class="left-button-container">
+                        <button class="button primary">Mulai</button>
+                        <button class="button secondary info-button">
+                            <img src="./images/vector-info.svg" alt="vector-info" class="info-icon"> Selengkapnya
+                        </button>
+                        <span class="button disabled">18+</span>
+                    </div>
                     <button class="button disabled rounded sound-button">
-                        <img src="./images/sound-logo.png" alt="sound-logo" />
+                        <img src="./images/vector-sound.svg" alt="vector-sound" />
                     </button>
-            </div>
+                </div>
             </div>
         </section>
 
-        <section>
+        <!-- ======  CONTINUE WATCHING ====== -->
+        <section class="continue-watching-section">
             <h5>Melanjutkan Nonton Film</h5>
-            <img src="./" alt="" />
-            <p>Don't Look Up</p>
-            <img src="./" alt="" />
-            <span>4,5/5</span>
+
+            <div class="carousel-wrapper">
+                <button class="arrow-btn left">
+                    <img src="./images/vector-arrow-next-left.svg" alt="Previous" />
+                </button>
+
+                <div class="content-container lanjut">
+                    <div class="landscape-card dark-overlay">
+                        <img src="./images/m0.png" alt="m0" />
+                        <div class="card-desc">
+                            <p>Don't Look Up</p>
+                            <div>
+                                <img src="./images/vector-star.svg" alt="vector-star" />
+                                <span>4.5/5</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="landscape-card dark-overlay">
+                        <img src="./images/m1.png" alt="m1" />
+                        <div class="card-desc">
+                            <p>The Batman</p>
+                            <div>
+                                <img src="./images/vector-star.svg" alt="vector-star" />
+                                <span>4.2/5</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="landscape-card dark-overlay">
+                        <img src="./images/m2.png" alt="m2" />
+                        <div class="card-desc">
+                            <p>Blue Lock</p>
+                            <div>
+                                <img src="./images/vector-star.svg" alt="vector-star" />
+                                <span>4.6/5</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="landscape-card dark-overlay">
+                        <img src="./images/m3.png" alt="m3" />
+                        <div class="card-desc">
+                            <p>A Man Called Otto</p>
+                            <div>
+                                <img src="./images/vector-star.svg" alt="vector-star" />
+                                <span>4.4/5</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="landscape-card dark-overlay">
+                        <img src="./images/m3a.png" alt="m3a" />
+                        <div class="card-desc">
+                            <p>Doctor Strange</p>
+                            <div>
+                                <img src="./images/vector-star.svg" alt="vector-star" />
+                                <span>4.7/5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="arrow-btn right">
+                    <img src="./images/vector-arrow-next-right.svg" alt="Next" />
+                </button>
+            </div>
+
         </section>
 
-        <section>
+        <!-- ======  TOP RATED ====== -->
+        <section class="continue-watching-section">
             <h5>Top Rating Film dan Series Hari ini</h5>
-            <img src="./" alt="" />
-            <img src="./" alt="" />
-            <img src="./" alt="" />
-            <img src="./" alt="" />
+
+            <div class="carousel-wrapper">
+                <button class="arrow-btn left">
+                    <img src="./images/vector-arrow-next-left.svg" alt="Previous" />
+                </button>
+        
+            <div class="content-container">
+                <div class="movie-card ">
+                    <img src="./images/m3b.png" alt="m3b" />
+                    <div class="episode-badge-container">
+                        <button class="episode-badge">Episode Baru</button>
+                    </div>
+                </div>
+
+                <div class="movie-card ">
+                    <img src="./images/m4.png" alt="m4" />
+                </div>
+
+                <div class="movie-card ">
+                    <img src="./images/m5.png" alt="m5" />
+                </div>
+
+                <div class="movie-card ">
+                    <img src="./images/m6.png" alt="m6" />
+                    <div class="episode-badge-container">
+                        <button class="episode-badge">Episode Baru</button>
+                    </div>
+                </div>
+
+                <div class="movie-card ">
+                    <img src="./images/m7.png" alt="m7" />
+                    <div class="top10-badge-container">
+                        <button class="top10-badge">
+                            <span class="top">Top</span>
+                            <span class="bottom">10</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="movie-card ">
+                    <img src="./images/m14.png" alt="m14" />
+                    <div class="episode-badge-container">
+                        <button class="episode-badge">Episode Baru</button>
+                    </div>
+                </div>
+
+            </div>
+
+                <button class="arrow-btn right">
+                    <img src="./images/vector-arrow-next-right.svg" alt="Next" />
+                </button>
+            </div>
+
+        </section>
+
+        <!-- ======  TRENDING ====== -->
+        <section class="continue-watching-section">
+            <h5>Film Trending</h5>
+
+            <div class="carousel-wrapper">
+                <button class="arrow-btn left">
+                    <img src="./images/vector-arrow-next-left.svg" alt="Previous" />
+                </button>
+
+            <div class="content-container">
+                <div class="movie-card ">
+                    <img src="./images/m8.png" alt="m8" />
+                    <div class="top10-badge-container">
+                        <button class="top10-badge">
+                            <span class="top">Top</span>
+                            <span class="bottom">10</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="movie-card ">
+                    <img src="./images/m9.png" alt="m9" />
+                    <div class="top10-badge-container">
+                        <button class="top10-badge">
+                            <span class="top">Top</span>
+                            <span class="bottom">10</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="movie-card ">
+                    <img src="./images/m10.png" alt="m10" />
+                    <div class="top10-badge-container">
+                        <button class="top10-badge">
+                            <span class="top">Top</span>
+                            <span class="bottom">10</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="movie-card ">
+                    <img src="./images/m11.png" alt="m11" />
+                    <div class="top10-badge-container">
+                        <button class="top10-badge">
+                            <span class="top">Top</span>
+                            <span class="bottom">10</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="movie-card ">
+                    <img src="./images/m12.png" alt="m12" />
+                    <div class="top10-badge-container">
+                        <button class="top10-badge">
+                            <span class="top">Top</span>
+                            <span class="bottom">10</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="movie-card ">
+                    <img src="./images/m15.png" alt="m15" />
+                    <div class="top10-badge-container">
+                        <button class="top10-badge">
+                            <span class="top">Top</span>
+                            <span class="bottom">10</span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+                <button class="arrow-btn right">
+                    <img src="./images/vector-arrow-next-right.svg" alt="Next" />
+                </button>
+            </div>
+
+        </section>
+
+        <!-- ======  NEW RELEASES ====== -->
+        <section class="continue-watching-section">
+            <h5>Rilis Baru</h5>
+
+            <div class="carousel-wrapper">
+                <button class="arrow-btn left">
+                    <img src="./images/vector-arrow-next-left.svg" alt="Previous" />
+                </button>
+
+            <div class="content-container">
+                <div class="movie-card ">
+                    <img src="./images/m13.png" alt="m13" />
+                    <div class="top10-badge-container">
+                        <button class="top10-badge">
+                            <span class="top">Top</span>
+                            <span class="bottom">10</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="movie-card ">
+                    <img src="./images/m14.png" alt="m14" />
+                    <div class="episode-badge-container">
+                        <button class="episode-badge">Episode Baru</button>
+                    </div>
+                </div>
+
+                <div class="movie-card ">
+                    <img src="./images/m15.png" alt="m15" />
+                    <div class="top10-badge-container">
+                        <button class="top10-badge">
+                            <span class="top">Top</span>
+                            <span class="bottom">10</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="movie-card ">
+                    <img src="./images/m16.png" alt="m16" />
+                    <div class="episode-badge-container">
+                        <button class="episode-badge">Episode Baru</button>
+                    </div>
+                </div>
+
+                <div class="movie-card ">
+                    <img src="./images/m17.png" alt="m17" />
+                </div>
+
+                <div class="movie-card ">
+                    <img src="./images/m4.png" alt="m4" />
+                </div>
+
+            </div>
+
+                <button class="arrow-btn right">
+                    <img src="./images/vector-arrow-next-right.svg" alt="Next" />
+                </button>
+            </div>            
+
         </section>
     </main>
-    <footer>
-        <img src="./" alt="" />
-        <p>$copy; 2023 Chill All Right Reserved</p>
-        <span>Genre</span>
-        <img src="./" alt="" />
-        <span>Bantuan</span>
-        <img src="./" alt="" />
+
+    <!-- ======  FOOTER ====== -->
+    <footer class="footer-container">
+        <section class="footer-logo">
+            <div class="footer-logo-container">
+                <img src="./images/vector-movie.svg" alt="movie-open" />
+                <h5 class="footer-title">CHILL</h5>
+            </div>    
+            <p>&copy; 2023 Chill All Rights Reserved.</p>
+        </section>
+
+        <section class="footer-more">
+            <!-- Dropdown 1: Genre -->
+            <div class="footer-item">
+                <div class="footer-toggle">
+                    <span>Genre</span>
+                    <img src="./images/arrow-right.png" alt="arrow-right" class="arrow-icon" />
+                </div>
+                <div class="footer-dropdown genre-dropdown">
+                    <div>
+                        <p>Aksi</p>
+                        <p>Anak-anak</p>
+                        <p>Anime</p>
+                        <p>Britania</p>
+                    </div>
+                    <div>
+                        <p>Drama</p>
+                        <p>Fantasi & Fantasi Ilmiah</p>
+                        <p>Kejahatan</p>
+                        <p>KDrama</p>
+                    </div>
+                    <div>
+                        <p>Komedi</p>
+                        <p>Petualangan</p>
+                        <p>Perang</p>
+                        <p>Romantis</p>
+                    </div>
+                    <div>
+                        <p>Sains & Alama</p>
+                        <p>Thriller</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dropdown 2: Bantuan -->
+            <div class="footer-item item-bantuan">
+                <div class="footer-toggle">
+                    <span>Bantuan</span>
+                    <img src="./images/arrow-right.png" alt="arrow-right" class="arrow-icon" />
+                </div>
+                <div class="footer-dropdown genre-dropdown">
+                    <div>
+                        <p>FAQ</p>
+                        <p>Kontak Kami</p>
+                        <p>Privasi</p>
+                        <p>Syarat & Ketentuan</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </footer>
+
+    <script src="./js/main.js"></script>
+
 </body>
 </html>
