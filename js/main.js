@@ -14,7 +14,7 @@ document.addEventListener('click', (e) => {
 });
 
 /* =======================================
-   FOOTER DROPDOWN (Mobile Only)
+   FOOTER DROPDOWN (Below 1440px)
 ======================================= */
 document.querySelectorAll('.footer-toggle').forEach((toggle) => {
   toggle.addEventListener('click', (e) => {
