@@ -10,8 +10,12 @@
 <body>
     <!-- ====== BACKGROUND IMAGE ====== -->
     <div class="login-background">
-        <!-- Optional: use CSS background-image or an <img> tag -->
-         <img src="./images/bg-login-register.jpg" alt="bg-login-register">
+        <picture>
+            <!-- Image for screens 1440px and above -->
+            <source media="(min-width: 1440px)" srcset="./images/bg-reg-desk.jpg">
+            <!--s Default image for mobile/tablet -->
+            <img src="./images/bg-login-register.jpg" alt="bg-login-register">
+        </picture>
     </div>
 
     <!-- ====== LOGIN BOX ====== -->
@@ -24,8 +28,10 @@
         </div>
 
         <!-- ====== WELCOME MESSAGE ====== -->
-        <h2>Daftar</h2>
-        <p>Selamat Datang!</p>
+        <div class="welcome">
+            <h2>Daftar</h2>
+            <p>Selamat Datang!</p>
+        </div>
 
         <!-- ====== LOGIN FORM ====== -->
         <form class="login-form">

@@ -25,7 +25,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(34, 40, 42, 0.9);
-    border-radius: 8px;
+    border-radius: 15px;
     display: flex;
     flex-direction: column;
     opacity: 1;
@@ -39,18 +39,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 2px;
-    padding-left: 2px;
-    gap: 2px;
-    margin-top: 23px;
+    gap: 5px;
+    margin-top: 22px;
     margin-bottom: 20px;
-
 
 }
 
 .login-logo img {
     width: 25px;
     height: 20px;
+
 }
 
 .login-logo span {
@@ -99,12 +97,13 @@
 }
 
 .login-form input {
-    padding: 10px 12px;
-    border-radius: 6px;
+    padding: 7px 12px;
+    border-radius: 15px;
+    text-indent: 1px;
     border: 1px solid #E7E3FC3B;
     background-color: #22282A;
     color: #fff;
-    font-size: 10px ;
+    font-size: 9px ;
 }
 
 .login-form input::placeholder {
@@ -128,12 +127,12 @@ margin-top: 20px;
 
 .password-wrapper input {
     width: 100%; /* fill the wrapper */
-    padding: 10px 12px;
-    border-radius: 6px;
+    padding: 7px 12px;
+    border-radius: 15px;
     border: 1px solid #E7E3FC3B;
     background-color: #22282A;
     color: #fff;
-    font-size: 10px;
+    font-size: 9px;
     box-sizing: border-box; /* important to include padding inside width */
 }
 
@@ -186,9 +185,9 @@ margin-top: 20px;
 .btn-login {
     background-color: #3D4142;
     color: #fff;
-    padding: 12px 0;
+    padding: 7px 0;
     border: 1px solid #E7E3FC3B;
-    border-radius: 48px;
+    border-radius: 15px;
     font-size: 10px;
     font-weight: 600;
     cursor: pointer;
@@ -211,9 +210,9 @@ margin-top: 20px;
     gap: 8px;
     background-color: transparent;
     color: #fff;
-    padding: 12px 0;
+    padding: 7px 0;
     border: 1px solid #E7E3FC3B;
-    border-radius: 14px;
+    border-radius: 15px;
     font-size: 10px;
     font-weight: 600;
     cursor: pointer;
@@ -225,3 +224,239 @@ margin-top: 20px;
 }
 
 
+
+
+
+
+
+/* ===========================================================
+   DESKTOP RESPONSIVE LAYOUT — WIDTH: 1440px
+   =========================================================== */
+@media screen and (min-width: 1440px) {
+
+/* ====== BACKGROUND IMAGE ====== */
+.login-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.login-background img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    position: absolute;
+    top: -0%;
+    left: 0%;
+}
+
+/* ====== LOGIN BOX ====== */
+.login-box {
+    position: absolute;
+    width: 529px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(34, 40, 42, 0.9);
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+    color: #fff;
+
+    justify-content: space-between; /* <<--- ADD THIS */
+}
+
+
+/* ====== LOGO ====== */
+.login-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 40px;
+    margin-bottom: 37px;
+}
+
+.login-logo img {
+    width: 43px;
+    height: 36px;
+}
+
+.login-logo span {
+    font-family: 'Londrina Solid', sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 110%;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* ====== WELCOME MESSAGE ====== */
+.login-box h2 {
+    margin-bottom: 8px;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    text-align: center;
+}
+
+.login-box p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    text-align: center;
+}
+
+/* ====== LOGIN FORM ====== */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top:37px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size:10px;
+}
+
+.login-form label {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.login-form input {
+    padding: 15px 12px;
+    border-radius: 24px;
+    text-indent: 4px;
+    border: 1px solid #E7E3FC3B;
+    background-color: #22282A;
+    color: #fff;
+    font-size: 16px;
+
+}
+
+.login-form input::placeholder {
+    color: #C1C2C4;
+}
+
+.password-label {
+margin-top: 37px;
+}
+
+.inside {
+    font-size: 8px #C1C2C4;
+}
+
+/* ====== PASSWORD WRAPPER ====== */
+.password-wrapper {
+    position: relative;
+    display: flex;
+    width: 100%; /* make wrapper full width */
+}
+
+.password-wrapper input {
+    width: 100%; /* fill the wrapper */
+    padding: 15px 12px;
+    border-radius: 24px;
+    
+    border: 1px solid #E7E3FC3B;
+    background-color: #22282A;
+    color: #fff;
+    font-size: 16px;
+    box-sizing: border-box; /* important to include padding inside width */
+}
+
+/* Toggle icon */
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.toggle-password img {
+    width: 18px;
+    height: 16px;
+    filter: invert(1);
+    transition: filter 0.2s ease;
+}
+
+/* Active state: aqua blue */
+.toggle-password.active img {
+    filter: invert(54%) sepia(92%) saturate(5351%) hue-rotate(169deg) brightness(95%) contrast(95%);
+}
+
+
+
+/* ====== LOGIN LINKS ====== */
+.login-links {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    margin-top: 12px;
+}
+
+.login-links a {
+    color: #C1C2C4;
+    text-decoration: none;
+}
+
+.login-links a strong {
+    color: #fff;
+}
+
+/* ====== LOGIN BUTTON ====== */
+.btn-login {
+    background-color: #3D4142;
+    color: #fff;
+    padding: 15px 0;
+    border: 1px solid #E7E3FC3B;
+    border-radius: 24px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top:37px;
+}
+
+/* ====== OR SEPARATOR ====== */
+.or-separator {
+    text-align: center;
+    font-size: 16px;
+    color: #C1C2C4;
+    margin: 8px 0;
+}
+
+/* ====== GOOGLE BUTTON ====== */
+.btn-google {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: transparent;
+    color: #fff;
+    padding: 15px 0;
+    border: 1px solid #E7E3FC3B;
+    border-radius: 24px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-google img {
+    width: 18px;
+    height: 18px;
+}
+}
