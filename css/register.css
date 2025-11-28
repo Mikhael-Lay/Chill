@@ -267,9 +267,7 @@ margin-top: 20px;
     opacity: 1;
     color: #fff;
 
-    justify-content: space-between; /* <<--- ADD THIS */
 }
-
 
 /* ====== LOGO ====== */
 .login-logo {
