@@ -101,6 +101,8 @@
   letter-spacing: 0.2px;
   cursor: pointer;
   transition: background 0.2s;
+
+    text-decoration: none;           
 }
 
 .dropdown-item:hover {
@@ -732,6 +734,8 @@
   letter-spacing: 0.2px;
   cursor: pointer;
   transition: background 0.2s;
+
+    text-decoration: none;   
 }
 
 .dropdown-item:hover {
